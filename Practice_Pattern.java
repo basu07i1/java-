@@ -35,6 +35,8 @@ public class Practice_Pattern {
     }
 
     public static void inverted_half_pyramid_withNumber(int n ){
+
+    
         //outer line 
         for(int i = 1; i<=n; i++){
             for(int j = 1; j<=n-i+1; j++){
@@ -43,12 +45,26 @@ public class Practice_Pattern {
             System.out.println();
         }
     }
+
+    public static void floyds_triangle(int n) {
+        int counter = 1;
+        //outer
+        for(int i = 1; i<=n; i++){
+            //how many time counter will printed
+            for(int j=1; j<=i; j++){
+                System.out.print(counter+" ");
+                counter++;
+            }
+            System.out.println();
+        }
+    }
         public static void main(String args[]) {
 
             // hollow_rectangle(5, 5);
             // inverted_rotated_half_pyramid(5);
-            inverted_half_pyramid_withNumber(5);
+            // inverted_half_pyramid_withNumber(5);
+            floyds_triangle(5);
         
-    }
+    } 
     
 }
