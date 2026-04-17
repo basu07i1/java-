@@ -26,7 +26,48 @@ public class Array_Practice {
             System.out.println();
         }
     }
+
+
+    public static void SubArray(int numbers[]){
+        for(int i=0; i<numbers.length; i++){
+            int start = numbers[i];
+            for(int j=i; j<numbers.length; j++){
+                int end  = j;
+                for(int k=start; k<= end; k++){
+                    System.err.print( numbers[k] + " ");
+                }
+                System.out.println();
+
+            }
+            System.out.println();
+        }
+    }
+
+    public static void BruteForce(int numbers[]){
+        int max = numbers[0];
+        for(int i = 0; i<numbers.length; i++){
+            if(numbers[i] > max){
+                max = numbers[i];
+            }
+            
+        }
+        System.out.println(max);
+    }
+    
+    
+    
+    public static void Target_Pair(int numbers[]){
+        int target = 8;
+        for(int i=0; i<numbers.length; i++){
+            for(int j=i+1; j<numbers.length; j++){
+                if(numbers[i] + numbers[j]  == target){
+                    System.out.println("Pair Found:" + numbers[i]+ " : " + numbers[j]);
+                }
+            }
+        }
+    }
     public static void main(String args[]){
+
         int numbers[] = {2 , 4 , 6 , 8 , 10};
         /* 
         //Reverse
@@ -39,7 +80,13 @@ public class Array_Practice {
         */
 
     //Pair
-    printPairs(numbers);
+    // printPairs(numbers);
+
+    //subarray
+    // SubArray(numbers);
+    // BruteForce(numbers);
+    Target_Pair(numbers);
+
     
 }
 }

@@ -1,18 +1,36 @@
 import java.util.*;
 
 public class Array_Pair {
-    public static void main(String[] args){
-        int[] arr = {4, 9, 10, 7, 5};
 
-        for(int i=0; i<arr.length; i++){
-            int first = arr[i];
-            for(int j=i+1; j<arr.length; j++){
-                int second = arr[j];
-                int sum = first +second;
-                System.out.println("Making pair of " + first + " and " + second + " sum: " + sum);
-            }
+//     public static void main(String[] args){
+//         int[] arr = {4, 9, 10, 7, 5};
+
+//         for(int i=0; i<arr.length; i++){
+//             int first = arr[i];
+//             for(int j=i+1; j<arr.length; j++){
+//                 int second = arr[j];
+//                 int sum = first +second;
+//                 System.out.println("Making pair of " + first + " and " + second + " sum: " + sum);
+//             }
+//         }
+//     }
+
+   public static void main(String[] args){
+    int[] numbers = {6 , 2 , 5 , 1, 3};
+    for(int i = 0; i<numbers.length; i++){
+        int curr = numbers[i];
+        for(int j=i+1; j<numbers.length; j++){
+            int update = numbers[j];
+
+            System.out.println("Making pair of " + curr + " and " + numbers[j]);
         }
+
     }
     
+   }
+
+
+
+    
 }
-                                  
+                 
